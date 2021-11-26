@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int kharidkol;
+    int mande;
+    int kharid;
+    int shomarande=0;
+    int i;
+    printf("mojoodi khod ra vared konid: ");
+    scanf("%d",&kharidkol);
+    for (i = 0; i <100 ; i++) {
+        printf("\nmablagh ra vared konid(baraye khoorooj 0 ra vared konid): ");
+        scanf("%d",&kharid);
+        shomarande+=kharid;
+        if (kharid==0 )
+            break;
+
+    }
+    mande=kharidkol-shomarande;
+
+    printf(" \n tedad kole kharid : %d",i);
+    printf("\n mojoodi nahayi kart:  %d",mande);
+    printf("\nmablagh kasr shode : %d",shomarande);
+    return 0;
+}
